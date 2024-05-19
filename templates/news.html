@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Новости
+{% endblock %}
+
+{% block body %}
+{% if param %}
+    <h1>Зарегистрируйтесь, чтобы просматривать новости.</h1>
+{% endif %}
+{% if not param %}
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="sport" class="nav-link px-2">Спорт</a></li>
+        <li><a href="science" class="nav-link px-2">Наука</a></li>
+        <li><a href="politics" class="nav-link px-2">Политика</a></li>
+      </ul>
+{% endif %}
+{% endblock %}
